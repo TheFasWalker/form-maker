@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<button>asdfaa</button> 
+<router-view/>  
 </template>
 
 <style scoped>
