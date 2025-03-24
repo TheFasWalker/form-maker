@@ -84,7 +84,7 @@ const emit = defineEmits(['update:modelValue']);
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; // Important for consistent width
+    box-sizing: border-box; 
   }
 
   textarea {

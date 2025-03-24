@@ -1,5 +1,6 @@
 <template>
     <form @submit.prevent="handleSubmit">
+        <h1 v-if="mainTitle">{{ mainTitle }}</h1>
         <FormGroup v-for="(field, fieldName) in fields" 
             :key="fieldName" 
             :field="field" 
@@ -34,6 +35,7 @@ interface Field {
 interface Props {
     fields: Record<string, Field>;
     modelValue: Record<string, any>;
+        mainTitle?:string
 }
 
 const props = defineProps<Props>();
@@ -79,10 +81,23 @@ const handleSubmit = () => {
 };
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .form-actions {
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
+}
+form{
+    padding: 20px 25px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1{
+    text-align: center;
 }
 </style>

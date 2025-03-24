@@ -1,6 +1,7 @@
 <template>
     <MainLayout>
         <FormGenerator 
+        main-title="Пример формы №1"
             :fields="formFields" 
             v-model:modelValue="formData" 
             @save="onSave" 
