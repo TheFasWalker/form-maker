@@ -1,6 +1,6 @@
 <template>
    <MainLayout>
-   example
+   example2
 </MainLayout>
     </template>
     <script setup lang="ts">
